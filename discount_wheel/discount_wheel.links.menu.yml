@@ -1,0 +1,8 @@
+# Define the menu links for this module
+discount_wheel.admin.settings:
+    title: 'Discount Wheel'
+    description: 'Configure the popup text for the discount wheel.'
+    route_name: discount_wheel.settings
+    parent: react_theme.admin_config
+    weight: -1
+

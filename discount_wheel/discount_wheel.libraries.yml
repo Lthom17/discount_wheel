@@ -1,0 +1,8 @@
+react_core:
+  version: 1.0
+  js:
+    js/dist/main.min.js:
+      minified: true
+      preprocess: false
+  dependencies:
+    - react_theme/react-core

@@ -1,0 +1,17 @@
+discounts_wheel.settings:
+  type: config_object
+  label: 'Discount Wheel Defaults'
+  mapping:
+    promotions:
+      type: sequence
+      label: 'Promotions'
+      sequence:
+        type: entity_reference
+        label: 'Promotion'
+        entity_type: commerce_promotion
+    popup_text:
+      type: string
+    congrats_text:
+      type: string
+    disclaimer_text:
+      type: string

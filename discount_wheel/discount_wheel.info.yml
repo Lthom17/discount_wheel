@@ -1,0 +1,10 @@
+name: Discount Wheel
+description: Creates an interactive discount wheel for customers.
+type: module
+core: 8.x
+core_version_requirement: ^10 || ^11
+dependencies:
+  - commerce:commerce
+  - entity:entity
+  - taxonomy:taxonomy
+  - block

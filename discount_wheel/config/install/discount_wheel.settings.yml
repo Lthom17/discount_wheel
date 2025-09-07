@@ -1,0 +1,5 @@
+id: default
+popup_title: 'Spin the Wheel!'
+congrats_text: 'Congratulations! You won a discount!'
+disclaimer_text: '*Disclaimer: Not all items on the website are eligible for the discount.'
+promotions: []

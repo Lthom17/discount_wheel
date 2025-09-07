@@ -1,0 +1,33 @@
+<?php
+
+use Drupal\Core\Entity\EntityReferenceSelection\SelectionPluginManagerInterface;
+
+function discount_wheel_theme($existing, $type, $theme, $path)
+{
+  return [
+    'discount_wheel_block' => [
+      'template' => 'discount-wheel-block',
+      'path' => $path . '/templates',
+      'variables' => [
+        'popupTitle' => '',
+        'congratsText' => '',
+        'slices' => [],
+        'disclaimerText' => '',
+      ],
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_entity_reference_selection_alter().
+ */
+//function discount_wheel_entity_reference_selection_alter(array &$selection_handlers, $field_definition)
+//{
+//  if ($field_definition->getTargetEntityTypeId() === 'commerce_promotion' &&
+//    $field_definition->getName() === 'promotions' &&
+//    $field_definition->getTargetBundle() === 'discount_wheel') {
+//    $selection_handlers['default'] = 'filtered_promotion_selection';
+//  }
+//}
+

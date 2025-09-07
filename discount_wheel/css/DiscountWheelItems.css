@@ -1,0 +1,94 @@
+.discount-wheel {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #5a5a5a;  /* outer gray border*/
+  padding: 10px;              /*space for inner white border*/
+  background-color: #FFF;     /* inner white border*/
+  display: inline-block;
+}
+
+.discount-wheel-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+}
+
+.discount-wheel-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.triangle-indicator {
+  top: 93px;
+  left: 50%;
+  width: 40px;
+  height: 30px;
+}
+
+.disclaimer {
+  font-size: .8em;
+}
+
+.popup-wrapper {
+  width: 100%;
+}
+
+#inner-popup {
+  background-color: white;
+}
+
+.coupon-code-input {
+  border: 0;
+  margin-left: 8px;
+}
+
+.coupon-code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cc-text {
+  margin: 0 auto;
+}
+
+.cc-button {
+  margin: 10px 0;
+  border: 0;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 480px) {
+  .discount-wheel {
+    width: 400px;
+    height: 400px;
+  }
+
+  .triangle-indicator {
+    top: 55px;
+  }
+
+  .popup-wrapper {
+    width: 500px;
+  }
+
+  #inner-popup {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .triangle-indicator {
+    top: 60px;
+  }
+
+  .popup-wrapper {
+    width: 800px;
+  }
+}

@@ -1,0 +1,23 @@
+
+discount_wheel.settings:
+  path: '/admin/config/react_theme/discount-wheel'
+  defaults:
+    _entity_form: 'discount_wheel.edit'
+    _title: 'Discount Wheel Settings'
+  requirements:
+    _permission: 'administer site configuration'
+entity.discount-wheel.edit_form:
+  path: '/admin/structure/discount-wheel/{discount_wheel}/edit'
+  defaults:
+    _entity_form: 'discount_wheel.edit'
+    _title: 'Edit Discount Wheel'
+  requirements:
+    _entity_access: 'discount_wheel.update'
+discount_wheel.generate_coupon:
+  path: '/discount-wheel/generate-coupon'
+  defaults:
+    _controller: '\Drupal\discount_wheel\Controller\CouponController::generateCoupon'
+    _title: 'Generate Coupon'
+  requirements:
+    _permission: 'access content'
+  methods: [POST]
