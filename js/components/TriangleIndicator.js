@@ -3,10 +3,6 @@ import styled from "styled-components";
 
 const TriangleIndicator = styled.svg`
   position: absolute;
-  //top: 58px;
-  //left: 50%;
-  //width: 40px;
-  //height: 30px;
   transform: translateX(-50%);
   z-index: 10;
   pointer-events: none;
